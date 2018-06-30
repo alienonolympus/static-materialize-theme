@@ -1,0 +1,114 @@
+body {
+  background-image: url("../img/wood_pattern.png");
+  background-repeat: repeat-xy; }
+
+.titlebar {
+  margin-bottom: 0;
+  overflow: auto; }
+  .titlebar div:first-child {
+    padding: 0; }
+    .titlebar div:first-child img {
+      width: 100%; }
+
+nav {
+  padding: 0.5em 0em 0.5em 0em; }
+  nav .nav-link i {
+    font-size: 3em; }
+  nav.fixed-on-top {
+    top: 0;
+    position: fixed; }
+
+.showcase {
+  padding: 0;
+  margin-bottom: 0;
+  height: 25em; }
+  .showcase img {
+    width: 100%;
+    height: 100%; }
+
+.departments {
+  display: block;
+  overflow: auto; }
+  .departments .top-spacer {
+    height: 1em;
+    margin-bottom: 0; }
+  .departments .content {
+    padding: 0;
+    margin-bottom: 0; }
+    .departments .content .col {
+      display: block;
+      text-align: center;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      height: 10em; }
+      @media only screen and (max-width: 600px) {
+        .departments .content .col:nth-child(2n - 1) {
+          border-right: 1px solid rgba(0, 0, 0, 0.2); } }
+      @media only screen and (min-width: 601px) and (max-width: 992px) {
+        .departments .content .col:nth-child(3n - 1) {
+          border-left: 1px solid rgba(0, 0, 0, 0.2);
+          border-right: 1px solid rgba(0, 0, 0, 0.2); } }
+      @media only screen and (min-width: 993px) {
+        .departments .content .col {
+          border-right: 1px solid rgba(0, 0, 0, 0.2); } }
+      .departments .content .col:last-child {
+        border: 0; }
+      .departments .content .col i {
+        font-size: 6em; }
+  .departments .bottom-spacer {
+    height: 2.5em;
+    border-bottom-left-radius: 2.5em;
+    border-bottom-right-radius: 2.5em; }
+
+.transition {
+  height: 5em;
+  padding-top: 2em; }
+  .transition div {
+    height: 3em;
+    border-top-left-radius: 2.5em;
+    border-top-right-radius: 2.5em; }
+
+.description {
+  display: block;
+  overflow: auto;
+  margin-bottom: 0; }
+  .description div {
+    overflow: auto; }
+    @media only screen and (min-width: 993px) {
+      .description div:nth-child(2) {
+        border-left: 1px solid rgba(0, 0, 0, 0.2); } }
+    .description div.description-text {
+      padding: 0em 2em 0em 2em; }
+      .description div.description-text p {
+        text-align: justify; }
+    .description div.description-img {
+      height: overflow;
+      padding-top: 3em; }
+      .description div.description-img img {
+        display: block;
+        margin: 0 auto;
+        width: 20em;
+        height: 20em; }
+
+.description-spacer {
+  height: 2em;
+  margin-bottom: 0; }
+
+.footer {
+  display: block;
+  overflow: auto;
+  color: #ffffff; }
+  .footer div {
+    margin-bottom: 0; }
+    .footer div.copyright {
+      text-align: center;
+      height: 2.5em;
+      border-bottom-left-radius: 2.5em;
+      border-bottom-right-radius: 2.5em; }
+    .footer div a {
+      color: #ffffff; }
+
+.footer-spacer {
+  height: 1.5em; }
+
+/*# sourceMappingURL=style.css.map */

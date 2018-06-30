@@ -1,0 +1,133 @@
+$small-screen-up: 601px !default
+$medium-screen-up: 993px !default
+$large-screen-up: 1201px !default
+$small-screen: 600px !default
+$medium-screen: 992px !default
+$large-screen: 1200px !default
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default
+$extra-large-and-up: "only screen and (min-width : #{$large-screen-up})" !default
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default
+
+body
+    //Background images sourced without modification from https://www.toptal.com/designers/subtlepatterns/
+    //Sakura by Aslan Zamanloo
+    //background-image: url("../img/sakura.png")
+    //Light Veneer by Abby
+    //background-image: url("../img/light-veneer.png")
+    //Wood Pattern by Alexey Usoltsev
+    background-image: url("../img/wood_pattern.png")
+    background-repeat: repeat-xy
+
+.titlebar
+    margin-bottom: 0
+    overflow: auto
+    div
+        &:first-child
+            padding: 0
+            img
+                width: 100%
+
+nav
+    padding: 0.5em 0em 0.5em 0em
+    .nav-link i
+        font-size: 3em
+    &.fixed-on-top
+        top: 0
+        position: fixed
+
+.showcase
+    padding: 0
+    margin-bottom: 0
+    height: 25em
+    //box-shadow: -4em 0em 5em -3em rgba(0, 0, 0, 0.14), 4em 0em 5em -3em rgba(0, 0, 0, 0.14)
+    img
+        width: 100%
+        height: 100%
+
+.departments
+    display: block
+    overflow: auto
+    .top-spacer
+        height: 1em
+        margin-bottom: 0
+    .content
+        padding: 0
+        margin-bottom: 0
+        .col
+            display: block
+            text-align: center
+            padding-top: 2em
+            padding-bottom: 2em
+            height: 10em
+            @media #{$small-and-down}
+                &:nth-child(2n - 1)
+                    border-right: 1px solid rgba(0, 0, 0, 0.2)
+            @media #{$medium-only}
+                &:nth-child(3n - 1)
+                    border-left: 1px solid rgba(0, 0, 0, 0.2)
+                    border-right: 1px solid rgba(0, 0, 0, 0.2)
+            @media #{$large-and-up}
+                border-right: 1px solid rgba(0, 0, 0, 0.2)
+            &:last-child
+                border: 0
+            i
+                font-size: 6em
+    .bottom-spacer
+        height: 2.5em
+        border-bottom-left-radius: 2.5em
+        border-bottom-right-radius: 2.5em
+
+.transition
+    height: 5em
+    padding-top: 2em
+    div
+        height: 3em
+        border-top-left-radius: 2.5em
+        border-top-right-radius: 2.5em
+
+.description
+    display: block
+    overflow: auto
+    margin-bottom: 0
+    div
+        overflow: auto
+        &:nth-child(2)
+            @media #{$large-and-up}
+                border-left: 1px solid rgba(0, 0, 0, 0.2)
+        &.description-text
+            padding:  0em 2em 0em 2em
+            p
+                text-align: justify
+        &.description-img
+            height: overflow
+            padding-top: 3em
+            img
+                display: block
+                margin: 0 auto
+                width: 20em
+                height: 20em
+
+.description-spacer
+    height: 2em
+    margin-bottom: 0
+
+.footer
+    display: block
+    overflow: auto
+    color: #ffffff
+    div
+        margin-bottom: 0
+        &.copyright
+            text-align: center
+            height: 2.5em
+            border-bottom-left-radius: 2.5em
+            border-bottom-right-radius: 2.5em
+        a
+            color: #ffffff
+
+.footer-spacer
+    height: 1.5em
