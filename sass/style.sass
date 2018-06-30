@@ -51,12 +51,10 @@ nav
 .departments
     display: block
     overflow: auto
-    .top-spacer
-        height: 1em
-        margin-bottom: 0
     .content
-        padding: 0
         margin-bottom: 0
+        border-bottom-left-radius: 2.5em
+        border-bottom-right-radius: 2.5em
         .col
             display: block
             text-align: center
@@ -66,38 +64,49 @@ nav
             @media #{$small-and-down}
                 &:nth-child(2n - 1)
                     border-right: 1px solid rgba(0, 0, 0, 0.2)
+                &:nth-child(5)
+                    border-bottom-left-radius: 2.5em
+                &:nth-child(6)
+                    border-bottom-right-radius: 2.5em
             @media #{$medium-only}
                 &:nth-child(3n - 1)
                     border-left: 1px solid rgba(0, 0, 0, 0.2)
                     border-right: 1px solid rgba(0, 0, 0, 0.2)
+                &:nth-child(4)
+                    border-bottom-left-radius: 2.5em
+                &:last-child(6)
+                    border-bottom-right-radius: 2.5em
             @media #{$large-and-up}
                 border-right: 1px solid rgba(0, 0, 0, 0.2)
+                &:first-child
+                    border-bottom-left-radius: 2.5em
+                &:last-child
+                    border-bottom-right-radius: 2.5em
+
             &:last-child
                 border: 0
             i
                 font-size: 6em
-    .bottom-spacer
-        height: 2.5em
-        border-bottom-left-radius: 2.5em
-        border-bottom-right-radius: 2.5em
-
-.transition
-    height: 5em
-    padding-top: 2em
-    div
-        height: 3em
-        border-top-left-radius: 2.5em
-        border-top-right-radius: 2.5em
+    .spacer
+        margin-top: 3.5em
+        margin-bottom: 0em
+        height: 4.5em
 
 .description
     display: block
     overflow: auto
-    margin-bottom: 0
+    margin-bottom: 0em
+    padding-bottom: 2em
+    &.top-radius
+        margin-top: -4.5em
+        padding-top: 4.5em
+        border-top-left-radius: 2.5em
+        border-top-right-radius: 2.5em
     div
         overflow: auto
-        &:nth-child(2)
-            @media #{$large-and-up}
-                border-left: 1px solid rgba(0, 0, 0, 0.2)
+        //&:nth-child(2)
+        //    @media #{$large-and-up}
+        //        border-left: 1px solid rgba(0, 0, 0, 0.2)
         &.description-text
             padding:  0em 2em 0em 2em
             p
@@ -111,16 +120,15 @@ nav
                 width: 20em
                 height: 20em
 
-.description-spacer
-    height: 2em
-    margin-bottom: 0
-
 .footer
     display: block
     overflow: auto
     color: #ffffff
+    padding-bottom: 1.5em
     div
         margin-bottom: 0
+        border-bottom-left-radius: 2.5em
+        border-bottom-right-radius: 2.5em
         &.copyright
             text-align: center
             height: 2.5em
@@ -128,6 +136,3 @@ nav
             border-bottom-right-radius: 2.5em
         a
             color: #ffffff
-
-.footer-spacer
-    height: 1.5em
