@@ -3,12 +3,13 @@
         $('.sidenav').sidenav();
     });
     $(window).bind('scroll', function() {
-        if ($(window).scrollTop() > 210) {
+        console.log($('.yellow').height());
+        console.log($(window).scrollTop());
+        if ($(window).scrollTop() > $('.yellow').height()) {
             $('nav').addClass('fixed-on-top');
         }
         else {
             $('nav').removeClass('fixed-on-top');
         }
     });
-    
 })(jQuery);

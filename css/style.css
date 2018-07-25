@@ -52,7 +52,7 @@ nav {
           border-right: 1px solid rgba(0, 0, 0, 0.2); }
         .departments .content .col:nth-child(4) {
           border-bottom-left-radius: 2.5em; }
-        .departments .content .col:last-child(6) {
+        .departments .content .col:last-child {
           border-bottom-right-radius: 2.5em; } }
       @media only screen and (min-width: 993px) {
         .departments .content .col {
